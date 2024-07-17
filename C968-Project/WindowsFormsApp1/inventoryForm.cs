@@ -52,14 +52,14 @@ namespace WindowsFormsApp1
         }
         private void openPartsForm(string type)
         { 
-            partsForm form2 = new partsForm(this);
+            partsForm form2 = new partsForm();
             form2.addModify.Text = type;
             form2.ShowDialog();
 
         }
         private void openPartsForm(string type, int partID)
         {
-            partsForm form2 = new partsForm(this);
+            partsForm form2 = new partsForm();
             form2.addModify.Text = type;
             form2.ShowDialog();
 

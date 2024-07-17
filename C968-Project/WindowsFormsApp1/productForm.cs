@@ -11,15 +11,16 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     public partial class productForm : Form
+
+        
     {
+        
         public productForm()
         {
             InitializeComponent();
+            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

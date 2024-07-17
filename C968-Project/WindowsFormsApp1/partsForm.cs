@@ -12,18 +12,13 @@ namespace WindowsFormsApp1
 {
     public partial class partsForm : Form
     {
-        private inventoryForm inventoryFormInstance;
 
-        public partsForm(inventoryForm shitfuck)
+        public partsForm()
         {
             InitializeComponent();
-            this.inventoryFormInstance = shitfuck;
         }
 
-        private void radioPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -45,8 +40,7 @@ namespace WindowsFormsApp1
 
         public void savePart_Click(object sender, EventArgs e)
         {
-            Part newPart = new Part(0, "tire", 4, 12.11, 5, 1);
-            inventoryFormInstance.addPart(newPart);
+            
             this.Close();
         }
     }

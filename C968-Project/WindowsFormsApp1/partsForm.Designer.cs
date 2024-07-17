@@ -274,8 +274,7 @@
             this.radioPanel.Name = "radioPanel";
             this.radioPanel.Size = new System.Drawing.Size(290, 44);
             this.radioPanel.TabIndex = 19;
-            this.radioPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.radioPanel_Paint);
-            // 
+            
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
