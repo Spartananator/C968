@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="inHouse.cs" />
     <Compile Include="inventory.cs" />
     <Compile Include="inventoryForm.cs">
       <SubType>Form</SubType>
@@ -53,13 +54,16 @@
     <Compile Include="inventoryForm.Designer.cs">
       <DependentUpon>inventoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="outsourced.cs" />
     <Compile Include="part.cs" />
+    <Compile Include="partManager.cs" />
     <Compile Include="productForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="productForm.Designer.cs">
       <DependentUpon>productForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="productManager.cs" />
     <Compile Include="products.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

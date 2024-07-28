@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1
 {
-    internal class outsourced : Part
+    public class outSourced : Part
     {
-        public int companyName;
+        public string companyName;
 
 
-        public outsourced(int id, string name, int inventory, double price, int max, int min, int companyname) : base(id, name, inventory, price, max, min)
+        public outSourced(int id, string name, decimal price, int instock, int max, int min, string companyname) : base(id, name, price, instock, max, min)
         {
             ID = id;
             Name = name;
-            Inventory = inventory;
             Price = price;
+            InStock = instock;
             Max = max;
             Min = min;
             companyName = companyname;

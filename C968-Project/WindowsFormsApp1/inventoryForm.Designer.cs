@@ -40,19 +40,21 @@
             this.partsDelete = new System.Windows.Forms.Button();
             this.partsGrid = new System.Windows.Forms.DataGridView();
             this.productsGrid = new System.Windows.Forms.DataGridView();
-            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productInventory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.partsLabel = new System.Windows.Forms.Label();
             this.productsLabel = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.productSearchButton = new System.Windows.Forms.Button();
+            this.productSearchBox = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.partSearchBox = new System.Windows.Forms.TextBox();
+            this.partSearchButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.partsGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsGrid)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // exitApp
@@ -64,6 +66,7 @@
             this.exitApp.TabIndex = 8;
             this.exitApp.Text = "Exit";
             this.exitApp.UseVisualStyleBackColor = true;
+            this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -74,16 +77,19 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.9716F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.056807F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.9716F));
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.partsGrid, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.productsGrid, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.partsGrid, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.productsGrid, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.partsLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.productsLabel, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(35, 32);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1265, 486);
@@ -131,6 +137,7 @@
             this.productDelete.TabIndex = 8;
             this.productDelete.Text = "Delete";
             this.productDelete.UseVisualStyleBackColor = true;
+            this.productDelete.Click += new System.EventHandler(this.productDelete_Click);
             // 
             // panel1
             // 
@@ -174,22 +181,28 @@
             this.partsDelete.TabIndex = 5;
             this.partsDelete.Text = "Delete";
             this.partsDelete.UseVisualStyleBackColor = true;
+            this.partsDelete.Click += new System.EventHandler(this.partsDelete_Click);
             // 
             // partsGrid
             // 
             this.partsGrid.AllowUserToAddRows = false;
             this.partsGrid.AllowUserToDeleteRows = false;
+            this.partsGrid.AllowUserToResizeRows = false;
             this.partsGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.partsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.partsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.partsGrid.Location = new System.Drawing.Point(3, 48);
+            this.partsGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.partsGrid.Location = new System.Drawing.Point(3, 108);
+            this.partsGrid.MultiSelect = false;
             this.partsGrid.Name = "partsGrid";
+            this.partsGrid.ReadOnly = true;
             this.partsGrid.RowHeadersVisible = false;
             this.partsGrid.RowHeadersWidth = 51;
             this.partsGrid.RowTemplate.Height = 24;
-            this.partsGrid.Size = new System.Drawing.Size(613, 405);
+            this.partsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.partsGrid.Size = new System.Drawing.Size(613, 345);
             this.partsGrid.TabIndex = 13;
             // 
             // productsGrid
@@ -199,56 +212,15 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.productsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.productsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.productID,
-            this.productName,
-            this.productInventory,
-            this.productPrice,
-            this.productMin,
-            this.productMax});
-            this.productsGrid.Location = new System.Drawing.Point(648, 48);
+            this.productsGrid.Location = new System.Drawing.Point(648, 108);
             this.productsGrid.Name = "productsGrid";
+            this.productsGrid.ReadOnly = true;
             this.productsGrid.RowHeadersVisible = false;
             this.productsGrid.RowHeadersWidth = 51;
             this.productsGrid.RowTemplate.Height = 24;
-            this.productsGrid.Size = new System.Drawing.Size(614, 405);
+            this.productsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.productsGrid.Size = new System.Drawing.Size(614, 345);
             this.productsGrid.TabIndex = 15;
-            // 
-            // productID
-            // 
-            this.productID.HeaderText = "Product ID";
-            this.productID.MinimumWidth = 6;
-            this.productID.Name = "productID";
-            // 
-            // productName
-            // 
-            this.productName.HeaderText = "Name";
-            this.productName.MinimumWidth = 6;
-            this.productName.Name = "productName";
-            // 
-            // productInventory
-            // 
-            this.productInventory.HeaderText = "Inventory";
-            this.productInventory.MinimumWidth = 6;
-            this.productInventory.Name = "productInventory";
-            // 
-            // productPrice
-            // 
-            this.productPrice.HeaderText = "Price";
-            this.productPrice.MinimumWidth = 6;
-            this.productPrice.Name = "productPrice";
-            // 
-            // productMin
-            // 
-            this.productMin.HeaderText = "Min";
-            this.productMin.MinimumWidth = 6;
-            this.productMin.Name = "productMin";
-            // 
-            // productMax
-            // 
-            this.productMax.HeaderText = "Max";
-            this.productMax.MinimumWidth = 6;
-            this.productMax.Name = "productMax";
             // 
             // partsLabel
             // 
@@ -274,6 +246,64 @@
             this.productsLabel.Text = "Products";
             this.productsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.productSearchButton);
+            this.panel3.Controls.Add(this.productSearchBox);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(648, 48);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(614, 54);
+            this.panel3.TabIndex = 19;
+            // 
+            // productSearchButton
+            // 
+            this.productSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.productSearchButton.Location = new System.Drawing.Point(275, 15);
+            this.productSearchButton.Name = "productSearchButton";
+            this.productSearchButton.Size = new System.Drawing.Size(75, 23);
+            this.productSearchButton.TabIndex = 9;
+            this.productSearchButton.Text = "Search";
+            this.productSearchButton.UseVisualStyleBackColor = true;
+            this.productSearchButton.Click += new System.EventHandler(this.productSearchButton_Click);
+            // 
+            // productSearchBox
+            // 
+            this.productSearchBox.Location = new System.Drawing.Point(356, 15);
+            this.productSearchBox.Name = "productSearchBox";
+            this.productSearchBox.Size = new System.Drawing.Size(255, 22);
+            this.productSearchBox.TabIndex = 0;
+            this.productSearchBox.TextChanged += new System.EventHandler(this.productSearchBox_TextChanged);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.partSearchBox);
+            this.panel4.Controls.Add(this.partSearchButton);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 48);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(613, 54);
+            this.panel4.TabIndex = 20;
+            // 
+            // partSearchBox
+            // 
+            this.partSearchBox.Location = new System.Drawing.Point(355, 14);
+            this.partSearchBox.Name = "partSearchBox";
+            this.partSearchBox.Size = new System.Drawing.Size(255, 22);
+            this.partSearchBox.TabIndex = 12;
+            this.partSearchBox.TextChanged += new System.EventHandler(this.partSearchBox_TextChanged);
+            // 
+            // partSearchButton
+            // 
+            this.partSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.partSearchButton.Location = new System.Drawing.Point(263, 13);
+            this.partSearchButton.Name = "partSearchButton";
+            this.partSearchButton.Size = new System.Drawing.Size(86, 23);
+            this.partSearchButton.TabIndex = 11;
+            this.partSearchButton.Text = "Search";
+            this.partSearchButton.UseVisualStyleBackColor = true;
+            this.partSearchButton.Click += new System.EventHandler(this.partSearchButton_Click);
+            // 
             // inventoryForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -288,6 +318,10 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.partsGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsGrid)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -297,12 +331,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView partsGrid;
         private System.Windows.Forms.DataGridView productsGrid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productInventory;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productMin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn productMax;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button partsAdd;
         private System.Windows.Forms.Button partsModify;
@@ -313,6 +341,12 @@
         private System.Windows.Forms.Button productDelete;
         private System.Windows.Forms.Label partsLabel;
         private System.Windows.Forms.Label productsLabel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button productSearchButton;
+        private System.Windows.Forms.TextBox productSearchBox;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox partSearchBox;
+        private System.Windows.Forms.Button partSearchButton;
     }
 }
 

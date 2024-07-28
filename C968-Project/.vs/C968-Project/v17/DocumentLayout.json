@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\horne\\onedrive\\documents\\github\\c968\\c968-project\\windowsformsapp1\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\partsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\horne\\onedrive\\documents\\github\\c968\\c968-project\\windowsformsapp1\\partsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\partsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\horne\\onedrive\\documents\\github\\c968\\c968-project\\windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\partsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\partsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\horne\\onedrive\\documents\\github\\c968\\c968-project\\windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\productform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\productform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\productform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\horne\\onedrive\\documents\\github\\c968\\c968-project\\windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\inventoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\partmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\partmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\windowsformsapp1\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4528B56-3465-4A73-8A96-AC38BB19F857}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,108 +51,116 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "products.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\products.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\products.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\products.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\products.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T16:54:49.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "part.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\part.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\part.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\part.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\part.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T13:15:29.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "partsForm.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\partsForm.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\partsForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T13:37:49.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "productForm.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\productForm.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\productForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T12:37:05.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "inventoryForm.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\inventoryForm.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\inventoryForm.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAuwFEAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:43:54.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "partsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\partsForm.cs",
               "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\partsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:33:08.501Z"
+              "WhenOpened": "2024-07-28T16:49:53.839Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "inventoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\inventoryForm.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\inventoryForm.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAIwNkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:43:54.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "productForm.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\productForm.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\productForm.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwB4AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T12:37:05.157Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "inventoryForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\inventoryForm.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\inventoryForm.cs [Design]",
+              "Title": "products.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\products.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\products.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\products.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\products.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA8wD0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:29:23.051Z"
+              "WhenOpened": "2024-07-16T18:02:37.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "productForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp1\\productForm.Designer.cs",
-              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\productForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALABAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T12:37:51.546Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "productForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\productForm.cs",
               "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\productForm.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\productForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T01:31:15.995Z"
+              "WhenOpened": "2024-07-28T13:33:59.983Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "partsForm.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\partsForm.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partsForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\partsForm.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T13:37:49.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "inventoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\inventoryForm.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventoryForm.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\inventoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T14:49:30.138Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "partManager.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\partManager.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\partManager.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\partManager.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAowE0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T22:25:06.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "inventory.cs",
+              "DocumentMoniker": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventory.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\inventory.cs",
+              "ToolTip": "C:\\Users\\horne\\OneDrive\\Documents\\GitHub\\C968\\C968-Project\\WindowsFormsApp1\\inventory.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\inventory.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T17:56:20.345Z",
+              "EditorCaption": ""
             }
           ]
         }

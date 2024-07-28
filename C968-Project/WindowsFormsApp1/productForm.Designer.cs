@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.partsGrid = new System.Windows.Forms.DataGridView();
+            this.partsAvailableGrid = new System.Windows.Forms.DataGridView();
             this.partsInProduct = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.partAddProduct = new System.Windows.Forms.Button();
@@ -48,17 +48,17 @@
             this.labelPrice = new System.Windows.Forms.Label();
             this.labelInventory = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.idBox = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.inventoryBox = new System.Windows.Forms.TextBox();
+            this.costBox = new System.Windows.Forms.TextBox();
+            this.maxBox = new System.Windows.Forms.TextBox();
+            this.minBox = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
             this.productFormType = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.partsGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsAvailableGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsInProduct)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -70,7 +70,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.partsGrid, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.partsAvailableGrid, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.partsInProduct, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 6);
@@ -78,7 +78,7 @@
             this.tableLayoutPanel1.Controls.Add(this.availableParts, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(439, 31);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
@@ -91,25 +91,32 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(876, 663);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // partsGrid
+            // partsAvailableGrid
             // 
-            this.partsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.partsGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.partsGrid.Location = new System.Drawing.Point(4, 91);
-            this.partsGrid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.partsGrid.Name = "partsGrid";
-            this.partsGrid.RowHeadersWidth = 51;
-            this.partsGrid.Size = new System.Drawing.Size(868, 212);
-            this.partsGrid.TabIndex = 0;
+            this.partsAvailableGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.partsAvailableGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.partsAvailableGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.partsAvailableGrid.Location = new System.Drawing.Point(4, 91);
+            this.partsAvailableGrid.Margin = new System.Windows.Forms.Padding(4);
+            this.partsAvailableGrid.MultiSelect = false;
+            this.partsAvailableGrid.Name = "partsAvailableGrid";
+            this.partsAvailableGrid.ReadOnly = true;
+            this.partsAvailableGrid.RowHeadersWidth = 51;
+            this.partsAvailableGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.partsAvailableGrid.Size = new System.Drawing.Size(868, 212);
+            this.partsAvailableGrid.TabIndex = 0;
             // 
             // partsInProduct
             // 
             this.partsInProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.partsInProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.partsInProduct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.partsInProduct.Location = new System.Drawing.Point(4, 385);
-            this.partsInProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.partsInProduct.Margin = new System.Windows.Forms.Padding(4);
             this.partsInProduct.Name = "partsInProduct";
+            this.partsInProduct.ReadOnly = true;
             this.partsInProduct.RowHeadersWidth = 51;
+            this.partsInProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.partsInProduct.Size = new System.Drawing.Size(868, 212);
             this.partsInProduct.TabIndex = 1;
             // 
@@ -119,7 +126,7 @@
             this.panel1.Controls.Add(this.partRemoveProduct);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 311);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(868, 41);
             this.panel1.TabIndex = 2;
@@ -129,12 +136,13 @@
             this.partAddProduct.AutoSize = true;
             this.partAddProduct.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.partAddProduct.Location = new System.Drawing.Point(452, 5);
-            this.partAddProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.partAddProduct.Margin = new System.Windows.Forms.Padding(4);
             this.partAddProduct.Name = "partAddProduct";
             this.partAddProduct.Size = new System.Drawing.Size(24, 26);
             this.partAddProduct.TabIndex = 1;
             this.partAddProduct.Text = "↓";
             this.partAddProduct.UseVisualStyleBackColor = true;
+            this.partAddProduct.Click += new System.EventHandler(this.partAddProduct_Click);
             // 
             // partRemoveProduct
             // 
@@ -142,12 +150,13 @@
             this.partRemoveProduct.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.partRemoveProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.partRemoveProduct.Location = new System.Drawing.Point(413, 5);
-            this.partRemoveProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.partRemoveProduct.Margin = new System.Windows.Forms.Padding(4);
             this.partRemoveProduct.Name = "partRemoveProduct";
             this.partRemoveProduct.Size = new System.Drawing.Size(24, 26);
             this.partRemoveProduct.TabIndex = 0;
             this.partRemoveProduct.Text = "↑";
             this.partRemoveProduct.UseVisualStyleBackColor = true;
+            this.partRemoveProduct.Click += new System.EventHandler(this.partRemoveProduct_Click);
             // 
             // panel2
             // 
@@ -155,7 +164,7 @@
             this.panel2.Controls.Add(this.cancelProduct);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(4, 605);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(868, 54);
             this.panel2.TabIndex = 3;
@@ -163,22 +172,24 @@
             // confirmProduct
             // 
             this.confirmProduct.Location = new System.Drawing.Point(656, 23);
-            this.confirmProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.confirmProduct.Margin = new System.Windows.Forms.Padding(4);
             this.confirmProduct.Name = "confirmProduct";
             this.confirmProduct.Size = new System.Drawing.Size(100, 28);
             this.confirmProduct.TabIndex = 1;
             this.confirmProduct.Text = "Confirm";
             this.confirmProduct.UseVisualStyleBackColor = true;
+            this.confirmProduct.Click += new System.EventHandler(this.confirmProduct_Click);
             // 
             // cancelProduct
             // 
             this.cancelProduct.Location = new System.Drawing.Point(764, 23);
-            this.cancelProduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancelProduct.Margin = new System.Windows.Forms.Padding(4);
             this.cancelProduct.Name = "cancelProduct";
             this.cancelProduct.Size = new System.Drawing.Size(100, 28);
             this.cancelProduct.TabIndex = 0;
             this.cancelProduct.Text = "Cancel";
             this.cancelProduct.UseVisualStyleBackColor = true;
+            this.cancelProduct.Click += new System.EventHandler(this.cancelProduct_Click);
             // 
             // productParts
             // 
@@ -206,7 +217,7 @@
             this.panel3.Controls.Add(this.searchProductParts);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(868, 54);
             this.panel3.TabIndex = 6;
@@ -214,15 +225,16 @@
             // searchProductPartsBox
             // 
             this.searchProductPartsBox.Location = new System.Drawing.Point(521, 20);
-            this.searchProductPartsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchProductPartsBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchProductPartsBox.Name = "searchProductPartsBox";
             this.searchProductPartsBox.Size = new System.Drawing.Size(341, 22);
             this.searchProductPartsBox.TabIndex = 1;
+            this.searchProductPartsBox.TextChanged += new System.EventHandler(this.searchProductPartsBox_TextChanged);
             // 
             // searchProductParts
             // 
             this.searchProductParts.Location = new System.Drawing.Point(413, 16);
-            this.searchProductParts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchProductParts.Margin = new System.Windows.Forms.Padding(4);
             this.searchProductParts.Name = "searchProductParts";
             this.searchProductParts.Size = new System.Drawing.Size(100, 28);
             this.searchProductParts.TabIndex = 0;
@@ -239,15 +251,15 @@
             this.tableLayoutPanel2.Controls.Add(this.labelPrice, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.labelInventory, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.labelName, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.textBox5, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 5);
+            this.tableLayoutPanel2.Controls.Add(this.idBox, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.nameBox, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.inventoryBox, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.costBox, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.maxBox, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.minBox, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.labelID, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(47, 209);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -319,60 +331,61 @@
             this.labelName.Text = "Name";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textBox1
+            // idBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(78, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(302, 22);
-            this.textBox1.TabIndex = 0;
+            this.idBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.idBox.Enabled = false;
+            this.idBox.Location = new System.Drawing.Point(78, 12);
+            this.idBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.idBox.Name = "idBox";
+            this.idBox.Size = new System.Drawing.Size(302, 22);
+            this.idBox.TabIndex = 0;
             // 
-            // textBox2
+            // nameBox
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(78, 58);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(302, 22);
-            this.textBox2.TabIndex = 1;
+            this.nameBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameBox.Location = new System.Drawing.Point(78, 58);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(302, 22);
+            this.nameBox.TabIndex = 1;
             // 
-            // textBox3
+            // inventoryBox
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(78, 104);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(302, 22);
-            this.textBox3.TabIndex = 2;
+            this.inventoryBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.inventoryBox.Location = new System.Drawing.Point(78, 104);
+            this.inventoryBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.inventoryBox.Name = "inventoryBox";
+            this.inventoryBox.Size = new System.Drawing.Size(302, 22);
+            this.inventoryBox.TabIndex = 2;
             // 
-            // textBox4
+            // costBox
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(78, 150);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(302, 22);
-            this.textBox4.TabIndex = 3;
+            this.costBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.costBox.Location = new System.Drawing.Point(78, 150);
+            this.costBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.costBox.Name = "costBox";
+            this.costBox.Size = new System.Drawing.Size(302, 22);
+            this.costBox.TabIndex = 3;
             // 
-            // textBox5
+            // maxBox
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Location = new System.Drawing.Point(78, 196);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(302, 22);
-            this.textBox5.TabIndex = 4;
+            this.maxBox.BackColor = System.Drawing.SystemColors.Window;
+            this.maxBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.maxBox.Location = new System.Drawing.Point(78, 196);
+            this.maxBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.maxBox.Name = "maxBox";
+            this.maxBox.Size = new System.Drawing.Size(302, 22);
+            this.maxBox.TabIndex = 4;
             // 
-            // textBox6
+            // minBox
             // 
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Location = new System.Drawing.Point(78, 242);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(302, 22);
-            this.textBox6.TabIndex = 5;
+            this.minBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.minBox.Location = new System.Drawing.Point(78, 242);
+            this.minBox.Margin = new System.Windows.Forms.Padding(4, 12, 4, 12);
+            this.minBox.Name = "minBox";
+            this.minBox.Size = new System.Drawing.Size(302, 22);
+            this.minBox.TabIndex = 5;
             // 
             // labelID
             // 
@@ -405,12 +418,12 @@
             this.Controls.Add(this.productFormType);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "productForm";
             this.Text = "Form2";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.partsGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.partsAvailableGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partsInProduct)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -433,14 +446,14 @@
         private System.Windows.Forms.Label labelPrice;
         private System.Windows.Forms.Label labelInventory;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox idBox;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.TextBox inventoryBox;
+        private System.Windows.Forms.TextBox costBox;
+        private System.Windows.Forms.TextBox maxBox;
+        private System.Windows.Forms.TextBox minBox;
         private System.Windows.Forms.Label labelID;
-        private System.Windows.Forms.DataGridView partsGrid;
+        private System.Windows.Forms.DataGridView partsAvailableGrid;
         private System.Windows.Forms.DataGridView partsInProduct;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button partAddProduct;
